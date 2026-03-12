@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="task33">
+    <resource name="FSharpSignatureData.task33" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.task33" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.task33" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.task33" action="remove"></resource>
+    <resource name="FSharpOptimizationData.task33" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.task33" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.task33" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.task33" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.task33" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.task33" action="remove"></resource>
+  </assembly>
+</linker>

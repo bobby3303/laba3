@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IHfMgdE8jHo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Владислав\\source\\repos\\task32\\task32\\task32.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Владислав\\.nuget\\packages\\fsharp.core\\10.0.103\\fsharp.core.10.0.103.nupkg.sha512"
+  ],
+  "logs": []
+}
