@@ -22,9 +22,12 @@ let rec buildSeq cnt =
     }
 
 let rec toBinary n =
-    if n = 0 then "0"
-    elif n = 1 then "1"
-    else (toBinary (n / 2)) + (string (n % 2))
+    if n = 0 then 
+        "0"
+    elif n = 1 then 
+        "1"
+    else 
+        (toBinary (n / 2)) + (string (n % 2))
 
 [<EntryPoint>]
 let main args = 
