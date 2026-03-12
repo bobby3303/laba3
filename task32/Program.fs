@@ -47,8 +47,7 @@ let main args =
     let cnt = inputCount()
     let inSeq = buildSeq cnt
 
-    // Seq.fold начинает "вытягивать" числа из последовательности по одному
-    // и склеивать их в итоговую строку.
+    // Seq.fold начинает "вытягивать" числа из последовательности по одному и склеивать их в итоговую строку.
     let result = Seq.fold folder "" inSeq
 
     printfn "\nОбработка завершена."
