@@ -7,9 +7,9 @@ let checkFile (f: string) (c: char) =
     ext.Length > 1 && Char.ToLower(ext.[1]) = Char.ToLower(c)
 
 let getFiles path c =
-    Directory.EnumerateFiles(path) // Получаем последовательность файлов
+    Directory.EnumerateFiles(path) 
     |> Seq.filter (fun f -> checkFile f c)
-    |> Seq.map Path.GetFileName // Длинный путь преобразуем в название файла
+    |> Seq.map Path.GetFileName 
 
 // Проверка на существование пути
 let rec getPath () =
