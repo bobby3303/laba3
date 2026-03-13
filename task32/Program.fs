@@ -14,8 +14,8 @@ let rec buildSeq cnt =
             printf "Введите число (0-9): "
             match Int32.TryParse(Console.ReadLine()) with
             | true, value when value >= 0 && value <= 9 ->
-                yield value              // Выдаем число
-                yield! buildSeq (cnt - 1) // Просим остальное
+                yield value              
+                yield! buildSeq (cnt - 1)
             | _ ->
                 eprintfn "Ошибка: введите число от 0 до 9"
                 yield! buildSeq cnt
@@ -47,7 +47,6 @@ let main args =
     let cnt = inputCount()
     let inSeq = buildSeq cnt
 
-    // Seq.fold начинает "вытягивать" числа из последовательности по одному и склеивать их в итоговую строку.
     let result = Seq.fold folder "" inSeq
 
     printfn "\nОбработка завершена."
