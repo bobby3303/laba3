@@ -14,11 +14,11 @@ let rec buildSeq cnt =
             printf "Введите число (1-9): "
             match Int32.TryParse(Console.ReadLine()) with
             | true, value when value >= 1 && value <= 9 ->
-                yield value              // "Выдаем" один элемент
-                yield! buildSeq (cnt - 1) // "yield!" (с воскл. знаком) добавляет другую последовательность
+                yield value              
+                yield! buildSeq (cnt - 1) 
             | _ ->
                 eprintfn "Ошибка: введите целое число от 1 до 9"
-                yield! buildSeq cnt      // Пробуем еще раз для этого же шага
+                yield! buildSeq cnt     
     }
 
 let rec toBinary n =
